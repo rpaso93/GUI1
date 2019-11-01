@@ -12,6 +12,7 @@ namespace WindowsFormsApplication16
 {
     public class Delincuente : PictureBox
     {
+      
         private List<Image> img = new List<Image>();
         int velocidad;
         public bool vivo = true;
@@ -44,8 +45,16 @@ namespace WindowsFormsApplication16
 
         }
         public void muerto(){
-            Image = null;
+
+           
+            Image = Properties.Resources.bum;
+ 
         }
+
+       
+
+
+
         public void delincuente_Click(object sender, EventArgs e)
         {
             Form1.puntaje += 1;

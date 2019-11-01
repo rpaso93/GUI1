@@ -12,8 +12,11 @@ namespace WindowsFormsApplication16
 {
     class Juego : PictureBox
     {
-        private List<Delincuente> delincuentes;
+        private Boolean test = true;
 
+        private List<Delincuente> delincuentes;
+        private int positionForDelete;
+        Timer timer = new Timer();
         public PictureBox caja1 = new System.Windows.Forms.PictureBox();
         public PictureBox caja2 = new System.Windows.Forms.PictureBox();
         public PictureBox caja3 = new System.Windows.Forms.PictureBox();
@@ -196,8 +199,15 @@ namespace WindowsFormsApplication16
                     {
                         Form1.vidas -= 1;
                     }
-                    this.Controls.Remove(delincuentes[i]);
-                    delincuentes.RemoveAt(i);
+
+                    delincuentes[i].muerto();
+                    this.positionForDelete = i;
+                    this.timer.Interval = 500;
+                    this.timer.Tick += new System.EventHandler(timer_explosion);
+                    this.timer.Start();
+                    
+                    
+                    
                 }
             }
         }
@@ -206,5 +216,18 @@ namespace WindowsFormsApplication16
         {
             return delincuentes;
         }
+        private void timer_explosion(object sender, EventArgs e)
+        {
+            this.timer.Stop();
+            if (test)
+            {
+                test = false;
+                this.Controls.Remove(this.delincuentes[this.positionForDelete]);
+                this.delincuentes.RemoveAt(this.positionForDelete);
+            }
+            
+           
+        }
+
     }
 }

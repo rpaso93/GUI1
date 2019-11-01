@@ -30,6 +30,7 @@ namespace WindowsFormsApplication16
             game.juego();
             this.Controls.Add(game);
             iniciar_Timers();
+            this.Cursor = CreateCursor((Bitmap)Properties.Resources.crosshair, new Size(30, 30));
         }
 
 
@@ -136,6 +137,13 @@ namespace WindowsFormsApplication16
                     d.BringToFront();
                 }
             }
+        }
+
+        public static Cursor CreateCursor(Bitmap bm, Size size)
+        {
+            bm = new Bitmap(bm, size);
+            bm.MakeTransparent();
+            return new Cursor(bm.GetHicon());
         }
 
     }
