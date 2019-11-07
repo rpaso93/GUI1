@@ -19,6 +19,8 @@ namespace WindowsFormsApplication16
         public static int vidas = 3;
         public static int puntaje = 0;
         Juego game;
+
+        Form3 frm3 = new Form3();
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +32,8 @@ namespace WindowsFormsApplication16
             game.juego();
             this.Controls.Add(game);
             iniciar_Timers();
+            this.Cursor = CreateCursor((Bitmap)Properties.Resources.crosshair, new Size(30, 30));
+            frm3.Show();
         }
 
 
@@ -38,13 +42,18 @@ namespace WindowsFormsApplication16
             if (vidas == 0)
             {
                 game.label2.Text = "Vidas: " + vidas;
+                frm3.label2.Text = "Vidas: " + vidas;
                 gameover();
             }
             else
             {
                 game.label1.Text = "Puntaje: " + puntaje;
+                frm3.label1.Text = "Puntaje: " + puntaje;
                 game.label2.Text = "Vidas: " + vidas;
+                frm3.label2.Text = "Vidas: " + vidas;
                 game.label3.Text = "Tiempo: " + tiempo / 1000 + " Seg";
+                frm3.label3.Text = "Tiempo: " + tiempo / 1000 + " Seg";
+
                 Text = (game.getDelincuentes().Count.ToString());
                 tiempo += 150;
                 foreach (Delincuente d in game.getDelincuentes())
@@ -74,15 +83,18 @@ namespace WindowsFormsApplication16
             if(num <33)
             {
                 
-                game.agregarDelincuentes(636, 343, -2 - tiempo / 4000- game.trackBar1.Value, 0.3);
+               //game.agregarDelincuentes(636, 343, -2 - tiempo / 4000- game.trackBar1.Value, 0.3);
+                game.agregarDelincuentes(636, 343, -2 - tiempo / 4000 - frm3.trackBar1.Value, 0.3);
             }
             else if(num > 33 && num < 66)
             {
-                game.agregarDelincuentes(110, 420, 2 + tiempo / 4000+ game.trackBar1.Value, 0.6);
+                //game.agregarDelincuentes(110, 420, 2 + tiempo / 4000+ game.trackBar1.Value, 0.6);
+                game.agregarDelincuentes(110, 420, 2 + tiempo / 4000 + frm3.trackBar1.Value, 0.6);
             }
             else
             {
-                game.agregarDelincuentes(800 , 535, -2 - tiempo / 4000- game.trackBar1.Value, 1);
+                //game.agregarDelincuentes(800 , 535, -2 - tiempo / 4000- game.trackBar1.Value, 1);
+                game.agregarDelincuentes(800, 535, -2 - tiempo / 4000 - frm3.trackBar1.Value, 1);
             }          
          }
 
@@ -136,6 +148,13 @@ namespace WindowsFormsApplication16
                     d.BringToFront();
                 }
             }
+        }
+
+        public static Cursor CreateCursor(Bitmap bm, Size size)
+        {
+            bm = new Bitmap(bm, size);
+            bm.MakeTransparent();
+            return new Cursor(bm.GetHicon());
         }
 
     }

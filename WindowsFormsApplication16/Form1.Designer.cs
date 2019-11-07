@@ -49,7 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(840, 648);
-            this.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

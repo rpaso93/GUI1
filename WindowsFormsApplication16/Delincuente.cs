@@ -12,10 +12,12 @@ namespace WindowsFormsApplication16
 {
     public class Delincuente : PictureBox
     {
+      
         private List<Image> img = new List<Image>();
         int velocidad;
         public bool vivo = true;
         private int i = 0;
+        
         public Delincuente(int velocidad) {
 
             this.velocidad = velocidad;
@@ -25,7 +27,7 @@ namespace WindowsFormsApplication16
             Image ladron2 = WindowsFormsApplication16.Properties.Resources.ladronajustado3;
             Image ladron3 = WindowsFormsApplication16.Properties.Resources.ladronajustado4;
 
-            
+
             if (velocidad < 0)
             {
 
@@ -44,7 +46,10 @@ namespace WindowsFormsApplication16
 
         }
         public void muerto(){
+
             Image = null;
+            //Image = Properties.Resources.bum;
+ 
         }
         public void delincuente_Click(object sender, EventArgs e)
         {
