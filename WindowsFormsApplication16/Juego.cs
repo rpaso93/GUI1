@@ -30,24 +30,12 @@ namespace WindowsFormsApplication16
         public Label label3 = new System.Windows.Forms.Label();
         public Label label4 = new System.Windows.Forms.Label();
         public TrackBar trackBar1 = new System.Windows.Forms.TrackBar();
-        public Terrorista rabbit;
 
         public void juego()
         {
             delincuentes = new List<Delincuente>();
             terroristas = new List<Terrorista>();
-         //   rabbit = new Terrorista(5, 429);
-/*
-            //Rabbit
-            rabbit.Location = new System.Drawing.Point(91, 429);
-            // rabbit.Size = new System.Drawing.Size((int)(WindowsFormsApplication16.Properties.Resources.ladronajustado1.Width * factorTam), (int)(WindowsFormsApplication16.Properties.Resources.ladronajustado1.Height * factorTam));
-            rabbit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            rabbit.TabIndex = 0;
-            rabbit.TabStop = false;
-            rabbit.Click += new System.EventHandler(rabbit.delincuente_Click);
-            rabbit.BackColor = System.Drawing.Color.Transparent;
-            rabbit.BringToFront();
-            */
+      
 
               //*******************
               this.caja1.BackColor = System.Drawing.Color.Transparent;
@@ -178,12 +166,12 @@ namespace WindowsFormsApplication16
               this.Controls.Add(caja4);
               this.Controls.Add(edificio1);
               this.Controls.Add(edificio2);
-              this.Controls.Add(label1);
-              this.Controls.Add(label2);
-              this.Controls.Add(label3);
-              this.Controls.Add(label4);
-              this.Controls.Add(trackBar1);
-              this.Controls.Add(rabbit);
+             // this.Controls.Add(label1);
+             // this.Controls.Add(label2);
+             // this.Controls.Add(label3);
+             // this.Controls.Add(label4);
+             // this.Controls.Add(trackBar1);
+           
 
               this.BackgroundImage = global::WindowsFormsApplication16.Properties.Resources.fondojuego2;
               this.Size= new System.Drawing.Size(840, 648);
@@ -217,7 +205,9 @@ namespace WindowsFormsApplication16
                       {
                           Form1.vidas -= 1;
                       }
-                      this.Controls.Remove(delincuentes[i]);
+                   // delincuentes[i].muerto();
+                    agregarExplosion(delincuentes[i]);
+                    this.Controls.Remove(delincuentes[i]);
                       delincuentes.RemoveAt(i);
                   }
               }
@@ -269,6 +259,24 @@ namespace WindowsFormsApplication16
 
         }
 
+        public void agregarExplosion(Terrorista d)
+        {
+
+            explosion.Image = Properties.Resources.bum2;
+            explosion.Location = new Point(d.Location.X, d.Location.Y);
+            explosion.Size = new Size(d.Width, d.Height);
+            explosion.SizeMode = PictureBoxSizeMode.StretchImage;
+            explosion.BackColor = Color.Transparent;
+            explosion.BringToFront();
+            this.Controls.Add(explosion);
+
+            this.timer.Interval = 500;
+
+            this.timer.Start();
+            this.timer.Tick += new System.EventHandler(timer_explosion);
+
+        }
+
         public void sacarTerrorista()
         {
             for (int i = terroristas.Count - 1; i >= 0; i--)
@@ -280,14 +288,14 @@ namespace WindowsFormsApplication16
                         Form1.vidas -= 1;
                     }
 
-                    delincuentes[i].muerto();
-                    agregarExplosion(delincuentes[i]);
+                   // terroristas[i].muerto();
+                    agregarExplosion(terroristas[i]);
 
-                    this.Controls.Remove(this.delincuentes[this.positionForDelete]);
-                    this.delincuentes.RemoveAt(this.positionForDelete);
+                    this.Controls.Remove(this.terroristas[this.positionForDelete]);
+                    this.terroristas.RemoveAt(this.positionForDelete);
 
-                    this.Controls.Remove(terroristas[i]);
-                    this.terroristas.RemoveAt(i);
+                  //  this.Controls.Remove(terroristas[i]);
+                    //this.terroristas.RemoveAt(i);
   
                 }
             }

@@ -66,9 +66,8 @@ namespace WindowsFormsApplication16
                     {
                         d.moverDelicuente();
                         superposicionDeImgs(d);
-
-                        //game.rabbit.Location = game.caja2.Location;
-                        
+                       
+                      
                     }
                     
                 }
@@ -76,25 +75,10 @@ namespace WindowsFormsApplication16
 
                 foreach (Terrorista d in game.getTerroristas())
                 {
-                    /* if (tiempo % 200 == 0)
-                     {
-                         d.moverDelicuente();
-                         // d.actualizarSprite();
-                         //superposicionDeImgs(d);
-                     }
-                     else
-                     {
-                         d.moverDelicuente();
-                        // superposicionDeImgs(d);
-
-                         //game.rabbit.Location = game.caja2.Location;
-
-                     }*/
+                   
                     d.moverDelicuente();
 
                 }
-                //  game.rabbit.moverDelicuente();
-                //game.rabbit.BringToFront();
 
                 game.caja1.BringToFront();
                 game.caja2.BringToFront();

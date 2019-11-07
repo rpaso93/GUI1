@@ -62,7 +62,26 @@ namespace WindowsFormsApplication16.Properties {
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-
+        /// </summary>
+        internal static System.Drawing.Bitmap ak {
+            get {
+                object obj = ResourceManager.GetObject("ak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap alarm_clock {
+            get {
+                object obj = ResourceManager.GetObject("alarm_clock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap bum {
             get {
@@ -93,7 +112,6 @@ namespace WindowsFormsApplication16.Properties {
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-
         /// </summary>
         internal static System.Drawing.Bitmap caja {
             get {
@@ -104,7 +122,6 @@ namespace WindowsFormsApplication16.Properties {
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-
         /// </summary>
         internal static System.Drawing.Bitmap crosshair {
             get {
@@ -115,7 +132,6 @@ namespace WindowsFormsApplication16.Properties {
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-
         /// </summary>
         internal static System.Drawing.Bitmap edificio {
             get {
@@ -146,7 +162,6 @@ namespace WindowsFormsApplication16.Properties {
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-
         /// </summary>
         internal static System.Drawing.Bitmap Explosion {
             get {
@@ -157,7 +172,6 @@ namespace WindowsFormsApplication16.Properties {
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-
         /// </summary>
         internal static System.Drawing.Bitmap fondojuego {
             get {
@@ -269,9 +283,69 @@ namespace WindowsFormsApplication16.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap like {
+            get {
+                object obj = ResourceManager.GetObject("like", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap score {
+            get {
+                object obj = ResourceManager.GetObject("score", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shooter {
+            get {
+                object obj = ResourceManager.GetObject("shooter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap speedometer {
+            get {
+                object obj = ResourceManager.GetObject("speedometer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap terrorista {
             get {
                 object obj = ResourceManager.GetObject("terrorista", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper2 {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

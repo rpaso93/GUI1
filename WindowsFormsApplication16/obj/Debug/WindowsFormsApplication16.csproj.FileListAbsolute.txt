@@ -1,4 +1,3 @@
-
 C:\Users\Alumno\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
 C:\Users\Alumno\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
 C:\Users\Alumno\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
@@ -20,3 +19,14 @@ C:\Users\Ger\Source\Repos\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsA
 C:\Users\Ger\Source\Repos\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
 C:\Users\Ger\Source\Repos\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.Cache
 C:\Users\Ger\Source\Repos\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+C:\Users\Dani\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojResolveAssemblyReference.cache
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.Cache
+C:\Users\Dani\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+C:\Users\Dani\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
