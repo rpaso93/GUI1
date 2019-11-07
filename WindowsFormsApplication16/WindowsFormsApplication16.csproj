@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Terrorista.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Delincuente.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -157,6 +160,10 @@
     <Content Include="Resources\crosshair.png" />
     <Content Include="Resources\crosshair32x32.png" />
     <None Include="Resources\Explosion.png" />
+    <None Include="Resources\rabbit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrorista.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
