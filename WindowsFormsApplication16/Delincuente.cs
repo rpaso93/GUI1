@@ -17,6 +17,7 @@ namespace WindowsFormsApplication16
         int velocidad;
         public bool vivo = true;
         private int i = 0;
+        
         public Delincuente(int velocidad) {
 
             this.velocidad = velocidad;
@@ -26,7 +27,7 @@ namespace WindowsFormsApplication16
             Image ladron2 = WindowsFormsApplication16.Properties.Resources.ladronajustado3;
             Image ladron3 = WindowsFormsApplication16.Properties.Resources.ladronajustado4;
 
-            
+
             if (velocidad < 0)
             {
 
@@ -46,15 +47,10 @@ namespace WindowsFormsApplication16
         }
         public void muerto(){
 
-           
-            Image = Properties.Resources.bum;
+            Image = null;
+            //Image = Properties.Resources.bum;
  
         }
-
-       
-
-
-
         public void delincuente_Click(object sender, EventArgs e)
         {
             Form1.puntaje += 1;

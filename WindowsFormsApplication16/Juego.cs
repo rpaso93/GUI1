@@ -12,9 +12,10 @@ namespace WindowsFormsApplication16
 {
     class Juego : PictureBox
     {
-        private Boolean test = true;
-
+        
+        private PictureBox explosion = new PictureBox();
         private List<Delincuente> delincuentes;
+
         private int positionForDelete;
         Timer timer = new Timer();
         public PictureBox caja1 = new System.Windows.Forms.PictureBox();
@@ -189,6 +190,24 @@ namespace WindowsFormsApplication16
 
         }
 
+        public void agregarExplosion(Delincuente d)
+        {
+            
+            explosion.Image = Properties.Resources.bum2;
+            explosion.Location = new Point(d.Location.X, d.Location.Y);
+            explosion.Size = new Size(d.Width, d.Height);
+            explosion.SizeMode = PictureBoxSizeMode.StretchImage;
+            explosion.BackColor = Color.Transparent;
+            explosion.BringToFront();
+            this.Controls.Add(explosion);
+
+            this.timer.Interval = 500;
+         
+            this.timer.Start();
+            this.timer.Tick += new System.EventHandler(timer_explosion);
+
+        }
+
         public void sacarDelincuentes()
         {
             for (int i = delincuentes.Count - 1; i >= 0; i--)
@@ -201,13 +220,10 @@ namespace WindowsFormsApplication16
                     }
 
                     delincuentes[i].muerto();
-                    this.positionForDelete = i;
-                    this.timer.Interval = 500;
-                    this.timer.Tick += new System.EventHandler(timer_explosion);
-                    this.timer.Start();
-                    
-                    
-                    
+                    agregarExplosion(delincuentes[i]);
+
+                    this.Controls.Remove(this.delincuentes[this.positionForDelete]);
+                    this.delincuentes.RemoveAt(this.positionForDelete);
                 }
             }
         }
@@ -216,16 +232,13 @@ namespace WindowsFormsApplication16
         {
             return delincuentes;
         }
+        
         private void timer_explosion(object sender, EventArgs e)
         {
+
             this.timer.Stop();
-            if (test)
-            {
-                test = false;
-                this.Controls.Remove(this.delincuentes[this.positionForDelete]);
-                this.delincuentes.RemoveAt(this.positionForDelete);
-            }
-            
+            this.explosion.Image = null;
+            this.Controls.Remove(this.explosion);
            
         }
 
