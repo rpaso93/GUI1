@@ -12,10 +12,11 @@ namespace WindowsFormsApplication16
 {
     public class Delincuente : PictureBox
     {
-        private List<Image> img = new List<Image>();
+        protected List<Image> img = new List<Image>();
         int velocidad;
         public bool vivo = true;
-        private int i = 0;
+        protected int i = 0;
+
         public Delincuente(int velocidad) {
 
             this.velocidad = velocidad;

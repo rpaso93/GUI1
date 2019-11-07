@@ -57,13 +57,43 @@ namespace WindowsFormsApplication16
                     {
                         d.moverDelicuente();
                         superposicionDeImgs(d);
+
+                        //game.rabbit.Location = game.caja2.Location;
+                        
                     }
                     
                 }
+
+
+                foreach (Terrorista d in game.getTerroristas())
+                {
+                    /* if (tiempo % 200 == 0)
+                     {
+                         d.moverDelicuente();
+                         // d.actualizarSprite();
+                         //superposicionDeImgs(d);
+                     }
+                     else
+                     {
+                         d.moverDelicuente();
+                        // superposicionDeImgs(d);
+
+                         //game.rabbit.Location = game.caja2.Location;
+
+                     }*/
+                    d.moverDelicuente();
+
+                }
+                //  game.rabbit.moverDelicuente();
+                //game.rabbit.BringToFront();
+
                 game.caja1.BringToFront();
                 game.caja2.BringToFront();
                 game.caja4.BringToFront();
+               
+
                 game.sacarDelincuentes();
+                game.sacarTerrorista();
             }
             
         }
@@ -75,16 +105,25 @@ namespace WindowsFormsApplication16
             {
                 
                 game.agregarDelincuentes(636, 343, -2 - tiempo / 4000- game.trackBar1.Value, 0.3);
+
+                game.agregarTerrorista(game.caja2.Location.X, game.caja2.Location.Y-10, game.trackBar1.Value+5, 0.3, game.caja2.Size);
             }
             else if(num > 33 && num < 66)
             {
                 game.agregarDelincuentes(110, 420, 2 + tiempo / 4000+ game.trackBar1.Value, 0.6);
+
+                game.agregarTerrorista(game.caja4.Location.X, game.caja4.Location.Y, game.trackBar1.Value+5, 0.6, game.caja4.Size);
             }
             else
             {
                 game.agregarDelincuentes(800 , 535, -2 - tiempo / 4000- game.trackBar1.Value, 1);
-            }          
-         }
+
+                game.agregarTerrorista(game.caja1.Location.X, game.caja1.Location.Y, game.trackBar1.Value+5, 1, game.caja1.Size);
+
+            }
+
+
+        }
 
         private void iniciar_Timers()
         {
