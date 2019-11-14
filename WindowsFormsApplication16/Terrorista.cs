@@ -10,45 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication16
 {
-    public class Terrorista : PictureBox
+    public class Terrorista : Enemigo
     {
-        protected List<Image> img = new List<Image>();
+        /*protected List<Image> img = new List<Image>();
         int velocidad;
-        public bool vivo = true;
+        public bool vivo = true;*/
         protected int i = 0;
-        bool bajando = false;
-        bool subir = true;
+        bool subiendo = true;
         int positionInicialY;
 
 
-        public Terrorista(int velocidad)
+        public Terrorista(int v):base(v)
         {
-
-            this.velocidad = velocidad;
-           // this.positionInicialY = positionInicialY;
-
             Image = Properties.Resources.terrorista;
-          //  Image  = Properties.Resources.ladronajustado1;
-            //Image ladron2 = WindowsFormsApplication16.Properties.Resources.ladronajustado3;
-           // Image ladron3 = WindowsFormsApplication16.Properties.Resources.ladronajustado4;
-
-
-            if (velocidad < 0)
-            {
-
-               // ladron0.RotateFlip(RotateFlipType.RotateNoneFlipX);
-                /*ladron1.RotateFlip(RotateFlipType.RotateNoneFlipX);
-                ladron2.RotateFlip(RotateFlipType.RotateNoneFlipX);
-                ladron3.RotateFlip(RotateFlipType.RotateNoneFlipX);*/
-                //WindowsFormsApplication16.Properties.Resources.ladron0.Clone()
-                //sendToBack
-            }
-
-          //  img.Add(ladron0);
-           /* img.Add(ladron1);
-            img.Add(ladron2);
-            img.Add(ladron3);*/
-
         }
         public void muerto()
         {
@@ -62,71 +36,52 @@ namespace WindowsFormsApplication16
         }
         public int getVelocidad()
         {
-            return velocidad;
+            return Velocidad;
         }
 
         public void setPosicionInicial(int pos)
         {
            positionInicialY = pos;
         }
-        /*  public void actualizarSprite()
-          {
-              i++;
-              if (i == 4)
-                  i = 0;
-              Location = new Point(Location.X + velocidad, Location.Y);
-              Image = img.ElementAt(i);
 
-              //this.BackColor= System.Drawing.Color.Transparent;
-          }*/
         public void moverDelicuente()
         {
-            int y = Location.Y;//- velocidad;
-            ///int dif = positionInicialY - y;
-            ///
-            //int prom = Size.Height * 0.90
-            int max = positionInicialY - Size.Height ;
+            int y = Location.Y;
+            int max = positionInicialY - Size.Height + 8;
             int min = positionInicialY;
             
             if (y == max)
             {
-                bajando = true;
-                subir = false;
-            }else if (y == min)
-            {
-                bajando = false;
-                subir = true;
+                subiendo = false;
             }
-            if (subir)
+            else if (y == min)
             {
-                int futuraPosicion = Location.Y - velocidad;
-                //Location = new Point(Location.X, Location.Y - velocidad);
-                if (max - velocidad < futuraPosicion)
+                subiendo = true;
+            }
+            if (subiendo == true)
+            {
+                int futuraPosicion = Location.Y - Velocidad;
+                if (max - Velocidad < futuraPosicion)
                 {
-                    Location = new Point(Location.X, Location.Y - velocidad);
+                    Location = new Point(Location.X, Location.Y - Velocidad);
                 }
                 else
                 {
                     Location = new Point(Location.X, max);
-                }
-               
-               
+                }               
             }
-            else if (bajando)
+            else
             {
-                int futuraPosicion = Location.Y + velocidad;
-                if (min - velocidad > futuraPosicion)
+                int futuraPosicion = Location.Y + Velocidad;
+                if (min - Velocidad > futuraPosicion)
                 {
-                    Location = new Point(Location.X, Location.Y + velocidad);
+                    Location = new Point(Location.X, Location.Y + Velocidad);
                 }
                 else
                 {
                     Location = new Point(Location.X, min);
-
-                }
-                   
-            }
-           
+                }                   
+            }           
         }
     }
 }

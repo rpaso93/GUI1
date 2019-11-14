@@ -30,3 +30,54 @@ C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16
 C:\Users\Dani\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
 C:\Users\Dani\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
 C:\Users\Dani\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojResolveAssemblyReference.cache
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v0.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.Cache
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojAssemblyReference.cache
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.cache
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.xml
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.CopyComplete
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\Resources\Basededatos.db
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.dll
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.xml
+C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\Resources\Basededatos.db
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.dll
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.xml
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.xml
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojAssemblyReference.cache
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.cache
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.CopyComplete
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb

@@ -14,9 +14,9 @@ namespace WindowsFormsApplication16
 
     public partial class Form1 : Form
     {
-        Random rmd = new Random();
+        Random rnd = new Random();
         private int tiempo = 0;
-        public static int vidas = 3;
+        public static int vidas = 0;
         public static int puntaje = 0;
         Juego game;
 
@@ -41,17 +41,13 @@ namespace WindowsFormsApplication16
         {
             if (vidas == 0)
             {
-                game.label2.Text = "Vidas: " + vidas;
                 frm3.label2.Text = "Vidas: " + vidas;
                 gameover();
             }
             else
             {
-                game.label1.Text = "Puntaje: " + puntaje;
                 frm3.label1.Text = "Puntaje: " + puntaje;
-                game.label2.Text = "Vidas: " + vidas;
                 frm3.label2.Text = "Vidas: " + vidas;
-                game.label3.Text = "Tiempo: " + tiempo / 1000 + " Seg";
                 frm3.label3.Text = "Tiempo: " + tiempo / 1000 + " Seg";
 
                 Text = (game.getDelincuentes().Count.ToString());
@@ -61,62 +57,77 @@ namespace WindowsFormsApplication16
                     if (tiempo % 200 == 0)
                     {
                         d.actualizarSprite();
-                        superposicionDeImgs(d);
-                    }else
+                    }
+                    else
                     {
                         d.moverDelicuente();
-                        superposicionDeImgs(d);
-                       
-                      
                     }
-                    
+                    superposicionDeImgs(d);
+
                 }
 
 
                 foreach (Terrorista d in game.getTerroristas())
-                {
-                   
+                {                   
                     d.moverDelicuente();
-
                 }
 
                 game.caja1.BringToFront();
                 game.caja2.BringToFront();
-                game.caja4.BringToFront();
-               
+                game.caja3.BringToFront();
+                game.caja4.BringToFront();               
 
                 game.sacarDelincuentes();
                 game.sacarTerrorista();
-            }
-            
+            }            
         }
 
         private void Timer2_Tick(object sender, EventArgs e)
         {
-            int num = rmd.Next(1, 100);
+            int i;
+            bool ocupado = false;
+            while (ocupado == false && game.SpawnsLlenos() == false)
+            {
+                i = rnd.Next(0, 7);
+                if (i%2 == 0 && game.spawns[i].Ocupado == false)
+                {
+                    game.agregarTerrorista(game.spawns[i].Pos, frm3.trackBar1.Value + 5, 0.3, game.spawns[i].Tam, i);
+                    ocupado = true;
+                }                    
+                else if (i % 2 != 0 && game.spawns[i].Ocupado == false)
+                {
+                    if(i == 1)
+                        game.agregarDelincuentes(game.spawns[i].Pos, 2 + tiempo / 4000 - frm3.trackBar1.Value, 0.3, i);
+                    else
+                        game.agregarDelincuentes(game.spawns[i].Pos, -2 - tiempo / 4000 - frm3.trackBar1.Value, 0.3, i);
+                    ocupado = true;
+                }
+                game.spawns[i].Ocupado = true;
+            }
+            
+            /*int num = rnd.Next(1, 100);
             if(num <33)
             {
                 //game.agregarDelincuentes(636, 343, -2 - tiempo / 4000- game.trackBar1.Value, 0.3);
                 game.agregarDelincuentes(636, 343, -2 - tiempo / 4000 - frm3.trackBar1.Value, 0.3);
 
-                game.agregarTerrorista(game.caja2.Location.X, game.caja2.Location.Y-10, game.trackBar1.Value+5, 0.3, game.caja2.Size);
+                game.agregarTerrorista(game.caja2.Location.X, game.caja2.Location.Y-10, frm3.trackBar1.Value+5, 0.3, game.caja2.Size);
             }
             else if(num > 33 && num < 66)
             {
                 //game.agregarDelincuentes(110, 420, 2 + tiempo / 4000+ game.trackBar1.Value, 0.6);
                 game.agregarDelincuentes(110, 420, 2 + tiempo / 4000 + frm3.trackBar1.Value, 0.6);
 
-                game.agregarTerrorista(game.caja4.Location.X, game.caja4.Location.Y, game.trackBar1.Value+5, 0.6, game.caja4.Size);
+                game.agregarTerrorista(game.caja4.Location.X, game.caja4.Location.Y, frm3.trackBar1.Value+5, 0.6, game.caja4.Size);
             }
             else
             {
                //game.agregarDelincuentes(800 , 535, -2 - tiempo / 4000- game.trackBar1.Value, 1);
                 game.agregarDelincuentes(800, 535, -2 - tiempo / 4000 - frm3.trackBar1.Value, 1);
 
-                game.agregarTerrorista(game.caja1.Location.X, game.caja1.Location.Y, game.trackBar1.Value+5, 1, game.caja1.Size);
+                game.agregarTerrorista(game.caja1.Location.X, game.caja1.Location.Y, frm3.trackBar1.Value+5, 1, game.caja1.Size);
 
-            }
-
+            }*/
         }
 
         private void iniciar_Timers()

@@ -10,24 +10,20 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication16
 {
-    public class Delincuente : PictureBox
+    public class Delincuente : Enemigo
     {
-        protected List<Image> img = new List<Image>();
-        int velocidad;
-        public bool vivo = true;
+        //protected List<Image> img = new List<Image>();
         protected int i = 0;
 
-        public Delincuente(int velocidad) {
-
-            this.velocidad = velocidad;
-
-            Image ladron0 = WindowsFormsApplication16.Properties.Resources.ladronajustado2;
-            Image ladron1 = WindowsFormsApplication16.Properties.Resources.ladronajustado1;
-            Image ladron2 = WindowsFormsApplication16.Properties.Resources.ladronajustado3;
-            Image ladron3 = WindowsFormsApplication16.Properties.Resources.ladronajustado4;
+        public Delincuente(int v):base(v)
+        {
+            Image ladron0 = Properties.Resources.ladronajustado2;
+            Image ladron1 = Properties.Resources.ladronajustado1;
+            Image ladron2 = Properties.Resources.ladronajustado3;
+            Image ladron3 = Properties.Resources.ladronajustado4;
 
 
-            if (velocidad < 0)
+            if (v < 0)
             {
 
                 ladron0.RotateFlip(RotateFlipType.RotateNoneFlipX);
@@ -44,11 +40,9 @@ namespace WindowsFormsApplication16
             img.Add(ladron3);
 
         }
-        public void muerto(){
-
-            Image = null;
-            //Image = Properties.Resources.bum;
- 
+        public void muerto()
+        {
+            Image = null; 
         }
         public void delincuente_Click(object sender, EventArgs e)
         {
@@ -58,20 +52,19 @@ namespace WindowsFormsApplication16
         }
         public int getVelocidad()
         {
-            return velocidad;
+            return Velocidad;
         }
-        public void actualizarSprite(){
+        public void actualizarSprite()
+        {
             i++;
             if (i==4)
                 i=0;
-            Location = new Point(Location.X + velocidad, Location.Y);
+            Location = new Point(Location.X + Velocidad, Location.Y);
             Image = img.ElementAt(i);
-            
-            //this.BackColor= System.Drawing.Color.Transparent;
         }
         public void moverDelicuente()
         {
-            Location = new Point(Location.X + velocidad, Location.Y);
+            Location = new Point(Location.X + Velocidad, Location.Y);
         }
     }
 }

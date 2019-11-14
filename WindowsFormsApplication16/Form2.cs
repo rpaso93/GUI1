@@ -12,6 +12,8 @@ namespace WindowsFormsApplication16
 {
     public partial class Form2 : Form
     {
+                public List<Player> jugadores = new List<Player>();
+
         private int tiempo = 0;
         private int puntaje = 0;
         public Form2()
@@ -28,9 +30,13 @@ namespace WindowsFormsApplication16
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Add(textBox1.Text, puntaje, tiempo);
-            button1.Enabled = false;
+            Player pl = new Player(textBox1.Text, Convert.ToInt32(puntaje), Convert.ToInt32(tiempo));
+            Sqlite.agregarPlayers(pl);
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = jugadores;
+
         }
+          
 
         public void recibirDatos(int t, int p)
         {
@@ -42,7 +48,7 @@ namespace WindowsFormsApplication16
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            dataGridView1.ReadOnly = true;
+            dataGridView1.DataSource = jugadores = Sqlite.obtenerPlayers();
         }
 
         private void Button2_Click(object sender, EventArgs e)
