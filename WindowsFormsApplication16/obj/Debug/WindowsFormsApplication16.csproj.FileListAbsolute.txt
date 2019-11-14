@@ -81,3 +81,5 @@ C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\obj\Debug\WindowsForms
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.Linq.dll
