@@ -10,7 +10,7 @@ namespace WindowsFormsApplication16
 
     public static class Sqlite
     {
-        private static SQLiteConnection con = new SQLiteConnection(@"Data Source=.\Resources\Basededatos.db;Version=3;");
+        private static SQLiteConnection con = new SQLiteConnection(@"Data Source=C:\Users\dimas\Desktop\nuevabase.db3;Version=3;"); /// cambiar ubicacion para que funcione
 
         public static List<Player> obtenerPlayers()
         {
@@ -23,9 +23,9 @@ namespace WindowsFormsApplication16
 
             while (reader.Read())
             {
-                players.Add(new Player(reader["Nombre"].ToString(), Convert.ToInt32(reader["Kills"]), Convert.ToInt32(reader["Time"])));
+                players.Add(new Player(Convert.ToInt32(reader["Id"]),reader["Nombre"].ToString(), Convert.ToInt32(reader["Kills"]), Convert.ToInt32(reader["Tiempo"])));
             }
-
+            con.Close();
             return players;
         }
 
@@ -35,15 +35,16 @@ namespace WindowsFormsApplication16
             con.Open();
 
             SQLiteCommand cmd = new SQLiteCommand(con);
-
-            cmd.CommandText = "INSERT INTO PLAYERS(NOMBRE, KILLS, TIME) VALUES (" + p.Nombre + "," + p.Kills + "," + p.Tiempo + ")";
-            cmd.ExecuteNonQuery();
-
+            try{             
+                cmd.CommandText = "INSERT INTO PLAYERS(NOMBRE, KILLS, TIEMPO) VALUES ('" + p.Nombre + "'," + p.Kills + "," + p.Tiempo + ")";
+                cmd.ExecuteNonQuery();
+                con.Close();            
+               } catch(Exception ex)
+            {
+                throw(new Exception(ex.Message)); 
+            }
         }
 
-        public static void cerrarConexion()
-        {
-            con.Close();
-        }
+     
     }
 }

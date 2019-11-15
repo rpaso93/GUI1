@@ -61,7 +61,6 @@ C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug
 C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.xml
 C:\Users\dimas\Desktop\Tiro_Al_Blanco v1.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\Resources\Basededatos.db
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.dll
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll

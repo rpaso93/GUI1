@@ -16,7 +16,7 @@ namespace WindowsFormsApplication16
     {
         Random rnd = new Random();
         private int tiempo = 0;
-        public static int vidas = 0;
+        public static int vidas = 3;
         public static int puntaje = 0;
         Juego game;
 
@@ -34,6 +34,7 @@ namespace WindowsFormsApplication16
             iniciar_Timers();
             this.Cursor = CreateCursor((Bitmap)Properties.Resources.crosshair, new Size(30, 30));
             frm3.Show();
+                    
         }
 
 
