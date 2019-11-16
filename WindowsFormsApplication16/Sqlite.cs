@@ -23,7 +23,7 @@ namespace WindowsFormsApplication16
 
             while (reader.Read())
             {
-                players.Add(new Player(Convert.ToInt32(reader["Id"]),reader["Nombre"].ToString(), Convert.ToInt32(reader["Kills"]), Convert.ToInt32(reader["Tiempo"])));
+                players.Add(new Player(Convert.ToInt32(reader["Id"]),reader["Nombre"].ToString(), Convert.ToInt32(reader["Kills"]), Convert.ToInt32(reader["Tiempo"]),reader["Fecha"].ToString()));
             }
             con.Close();
             return players;
@@ -36,7 +36,7 @@ namespace WindowsFormsApplication16
 
             SQLiteCommand cmd = new SQLiteCommand(con);
             try{             
-                cmd.CommandText = "INSERT INTO PLAYERS(NOMBRE, KILLS, TIEMPO) VALUES ('" + p.Nombre + "'," + p.Kills + "," + p.Tiempo + ")";
+                cmd.CommandText = "INSERT INTO PLAYERS(FECHA,NOMBRE, KILLS, TIEMPO) VALUES ('" + p.Fecha + "','" + p.Nombre + "'," + p.Kills + "," + p.Tiempo + ")";
                 cmd.ExecuteNonQuery();
                 con.Close();            
                } catch(Exception ex)

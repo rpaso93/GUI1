@@ -16,7 +16,7 @@ namespace WindowsFormsApplication16
     {
         Random rnd = new Random();
         private int tiempo = 0;
-        public static int vidas = 3;
+        public static int vidas = 0;
         public static int puntaje = 0;
         Juego game;
 
@@ -147,9 +147,11 @@ namespace WindowsFormsApplication16
                 if (OwnedForms.Length == 0)
                 {
                     Form2 f = new Form2(tiempo, puntaje);
+                   
                     AddOwnedForm(f);
                     f.Show();
                     this.Hide();
+                  
                 }
                 else
                 {
@@ -157,6 +159,7 @@ namespace WindowsFormsApplication16
                     f2.recibirDatos(tiempo, puntaje);
                     f2.Show();
                     this.Hide();
+
                 }
                 
             }

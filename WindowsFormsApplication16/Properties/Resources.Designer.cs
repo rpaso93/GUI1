@@ -133,16 +133,6 @@ namespace WindowsFormsApplication16.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap crosshair32x32 {
-            get {
-                object obj = ResourceManager.GetObject("crosshair32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap edificio {
             get {
                 object obj = ResourceManager.GetObject("edificio", resourceCulture);
@@ -301,12 +291,12 @@ namespace WindowsFormsApplication16.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] nuevabase {
+        public static System.Drawing.Bitmap Menu {
             get {
-                object obj = ResourceManager.GetObject("nuevabase", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("Menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

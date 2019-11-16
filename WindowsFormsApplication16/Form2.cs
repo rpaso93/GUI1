@@ -15,7 +15,7 @@ namespace WindowsFormsApplication16
     {
                 public List<Player> jugadores = new List<Player>();
 
-        //private DateTime localDate = DateTime.Now;
+        private DateTime localDate = DateTime.Now;
         private int tiempo = 0;
         private int puntaje = 0;
         public Form2()
@@ -32,8 +32,8 @@ namespace WindowsFormsApplication16
 
         private void Button1_Click(object sender, EventArgs e)
         {
-           /* string fecha = localDate.ToString();*/
-            Player pl = new Player(1, textBox1.Text, Convert.ToInt32(puntaje), Convert.ToInt32(tiempo));
+            DateTime fecha = localDate;
+            Player pl = new Player(1, textBox1.Text, Convert.ToInt32(puntaje), Convert.ToInt32(tiempo),fecha.ToString());
             Sqlite.agregarPlayers(pl);
 
 
@@ -72,6 +72,11 @@ namespace WindowsFormsApplication16
         {            
             Owner.Close();
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

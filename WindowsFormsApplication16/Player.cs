@@ -11,17 +11,17 @@ namespace WindowsFormsApplication16
     {
         int id;
         string nombre;
-      //  string fecha;
+        string fecha;
         int kills;
         int tiempo;
 
 
-        //public Player(int pId, String pFecha, string pNombre,  int pKills, int pTiempo)
-        public Player(int pId, string pNombre, int pKills, int pTiempo)
+      public Player(int pId, string pNombre,  int pKills, int pTiempo, string pFecha)
+       // public Player(int pId, string pNombre, int pKills, int pTiempo)
 
         {
             id = pId;
-          //  fecha = pFecha;
+            fecha = pFecha;
             nombre = pNombre;
             kills = pKills;
             tiempo = pTiempo;
@@ -36,7 +36,7 @@ namespace WindowsFormsApplication16
 
         }
 
-        /*public string Fecha
+        public string Fecha
         {
             get => fecha;
 
@@ -44,7 +44,7 @@ namespace WindowsFormsApplication16
             {
                 fecha = value;
             }
-        }*/
+        }
 
         public string Nombre
         {

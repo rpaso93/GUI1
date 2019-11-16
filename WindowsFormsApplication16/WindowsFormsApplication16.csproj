@@ -180,6 +180,7 @@
     <None Include="Resources\edificio3.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Menu.png" />
     <None Include="Resources\shooter.png" />
     <None Include="Resources\wallpaper2.png" />
     <None Include="Resources\wallpaper.jpg" />
