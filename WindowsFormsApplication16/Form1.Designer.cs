@@ -41,19 +41,19 @@
             // 
             // timer2
             // 
-            this.timer2.Interval = 5000;
+            this.timer2.Interval = 3500;
             this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(1260, 997);
+            this.ClientSize = new System.Drawing.Size(834, 646);
             this.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sniper Game";

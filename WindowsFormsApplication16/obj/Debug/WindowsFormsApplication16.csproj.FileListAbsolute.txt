@@ -82,3 +82,45 @@ C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsForms
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.EF6.dll
 C:\Users\dimas\Desktop\Gui\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.dll
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.xml
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.xml
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll.config
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojAssemblyReference.cache
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.cache
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.CopyComplete
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+D:\Programs\VisualStudio\GUI_1\Tiro_Al_Blanco v2.0.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\EntityFramework.dll
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\EntityFramework.xml
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.xml
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojAssemblyReference.cache
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.cache
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.CopyComplete
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb

@@ -17,7 +17,6 @@ namespace WindowsFormsApplication16
 
 
       public Player(int pId, string pNombre,  int pKills, int pTiempo, string pFecha)
-       // public Player(int pId, string pNombre, int pKills, int pTiempo)
 
         {
             id = pId;
@@ -40,10 +39,8 @@ namespace WindowsFormsApplication16
         {
             get => fecha;
 
-            set
-            {
-                fecha = value;
-            }
+            set => fecha = value;
+            
         }
 
         public string Nombre

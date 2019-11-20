@@ -16,11 +16,11 @@ namespace WindowsFormsApplication16
     {
         Random rnd = new Random();
         private int tiempo = 0;
-        public static int vidas = 0;
+        public static int vidas = 3;
         public static int puntaje = 0;
         Juego game;
+        Form3 frm3;
 
-        Form3 frm3 = new Form3();
         public Form1()
         {
             InitializeComponent();
@@ -28,13 +28,13 @@ namespace WindowsFormsApplication16
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            frm3 = new Form3(this.Location);
             game = new Juego();
             game.juego();
             this.Controls.Add(game);
             iniciar_Timers();
             this.Cursor = CreateCursor((Bitmap)Properties.Resources.crosshair, new Size(30, 30));
             frm3.Show();
-                    
         }
 
 
@@ -69,18 +69,18 @@ namespace WindowsFormsApplication16
 
 
                 foreach (Terrorista d in game.getTerroristas())
-                {                   
+                {
                     d.moverDelicuente();
                 }
 
                 game.caja1.BringToFront();
                 game.caja2.BringToFront();
                 game.caja3.BringToFront();
-                game.caja4.BringToFront();               
+                game.caja4.BringToFront();
 
                 game.sacarDelincuentes();
                 game.sacarTerrorista();
-            }            
+            }
         }
 
         private void Timer2_Tick(object sender, EventArgs e)
@@ -90,22 +90,22 @@ namespace WindowsFormsApplication16
             while (ocupado == false && game.SpawnsLlenos() == false)
             {
                 i = rnd.Next(0, 7);
-                if (i%2 == 0 && game.spawns[i].Ocupado == false)
+                if (i % 2 == 0 && game.spawns[i].Ocupado == false)
                 {
                     game.agregarTerrorista(game.spawns[i].Pos, frm3.trackBar1.Value + 5, 0.3, game.spawns[i].Tam, i);
                     ocupado = true;
-                }                    
+                }
                 else if (i % 2 != 0 && game.spawns[i].Ocupado == false)
                 {
-                    if(i == 1)
-                        game.agregarDelincuentes(game.spawns[i].Pos, 2 + tiempo / 4000 - frm3.trackBar1.Value, 0.3, i);
+                    if (i == 1)
+                        game.agregarDelincuentes(game.spawns[i].Pos, 2 + tiempo / 4000 - frm3.trackBar1.Value, game.spawns[i].Tam, i);
                     else
-                        game.agregarDelincuentes(game.spawns[i].Pos, -2 - tiempo / 4000 - frm3.trackBar1.Value, 0.3, i);
+                        game.agregarDelincuentes(game.spawns[i].Pos, -2 - tiempo / 4000 - frm3.trackBar1.Value, game.spawns[i].Tam, i);
                     ocupado = true;
                 }
                 game.spawns[i].Ocupado = true;
             }
-            
+
             /*int num = rnd.Next(1, 100);
             if(num <33)
             {
@@ -134,7 +134,7 @@ namespace WindowsFormsApplication16
         private void iniciar_Timers()
         {
             timer1.Start();
-            timer2.Start();            
+            timer2.Start();
         }
 
         private void gameover()
@@ -142,16 +142,14 @@ namespace WindowsFormsApplication16
             timer1.Stop();
             timer2.Stop();
             DialogResult dr = MessageBox.Show("Te quedaste sin vidas!!", "GAME OVER", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            if(dr == DialogResult.OK)
+            if (dr == DialogResult.OK)
             {
                 if (OwnedForms.Length == 0)
                 {
                     Form2 f = new Form2(tiempo, puntaje);
-                   
                     AddOwnedForm(f);
                     f.Show();
                     this.Hide();
-                  
                 }
                 else
                 {
@@ -159,12 +157,11 @@ namespace WindowsFormsApplication16
                     f2.recibirDatos(tiempo, puntaje);
                     f2.Show();
                     this.Hide();
-
                 }
-                
+
             }
         }
-        
+
         private void superposicionDeImgs(Delincuente d)
         {
             if (d.Location.X < game.edificio2.Location.X + game.edificio2.Width && d.getVelocidad() < 0)

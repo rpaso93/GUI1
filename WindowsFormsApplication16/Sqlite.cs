@@ -9,7 +9,10 @@ namespace WindowsFormsApplication16
 {
 
     public static class Sqlite
-    {
+    {    /// <summary>
+    /// QUEDO PENDIENTE RESOLVER QUE HACER CON LOS PERMISOS DE WINDOWS PARA QUE NO SEA OBLIGATORIO DEJAR LA BASE EN ESCRITORIO
+    /// </summary>
+        // private static SQLiteConnection con = new SQLiteConnection(@"Data Source=...\WindowsFormsApplication16\Base de Datos\nuevabase.db3;Version=3;"); /// cambiar ubicacion para que funcione
         private static SQLiteConnection con = new SQLiteConnection(@"Data Source=C:\Users\dimas\Desktop\nuevabase.db3;Version=3;"); /// cambiar ubicacion para que funcione
 
         public static List<Player> obtenerPlayers()

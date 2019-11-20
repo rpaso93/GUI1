@@ -15,7 +15,7 @@ namespace WindowsFormsApplication16
         //protected List<Image> img = new List<Image>();
         protected int i = 0;
 
-        public Delincuente(int v):base(v)
+        public Delincuente(int v) : base(v)
         {
             Image ladron0 = Properties.Resources.ladronajustado2;
             Image ladron1 = Properties.Resources.ladronajustado1;
@@ -42,7 +42,7 @@ namespace WindowsFormsApplication16
         }
         public void muerto()
         {
-            Image = null; 
+            Image = null;
         }
         public void delincuente_Click(object sender, EventArgs e)
         {
@@ -57,8 +57,8 @@ namespace WindowsFormsApplication16
         public void actualizarSprite()
         {
             i++;
-            if (i==4)
-                i=0;
+            if (i == 4)
+                i = 0;
             Location = new Point(Location.X + Velocidad, Location.Y);
             Image = img.ElementAt(i);
         }

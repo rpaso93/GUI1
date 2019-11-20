@@ -17,9 +17,10 @@ namespace WindowsFormsApplication16
         public Label label3 = new System.Windows.Forms.Label();
         public Label label4 = new System.Windows.Forms.Label();
         public TrackBar trackBar1 = new System.Windows.Forms.TrackBar();
-        public Form3()
+        public Form3(Point p)
         {
             InitializeComponent();
+            this.Location = new Point(p.X-this.Size.Width, p.Y);
         }
 
         private void label1_Click(object sender, EventArgs e)
