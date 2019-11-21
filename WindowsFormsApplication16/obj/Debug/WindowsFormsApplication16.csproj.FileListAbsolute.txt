@@ -124,3 +124,45 @@ C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj
 C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.CopyComplete
 C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
 C:\Users\dimas\Desktop\Sniper v1.1.0\Sniper v1.1.0\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.dll
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.EF6.dll
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.Linq.dll
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.xml
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.xml
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.xml
+D:\proyecyo\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll.config
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojAssemblyReference.cache
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.cache
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.CopyComplete
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+D:\proyecyo\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe.config
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.exe
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\WindowsFormsApplication16.pdb
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.dll
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.xml
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.xml
+D:\Proyecto\GUI1\WindowsFormsApplication16\bin\Debug\System.Data.SQLite.dll.config
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csprojAssemblyReference.cache
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form1.resources
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form2.resources
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Form3.resources
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.Properties.Resources.resources
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.GenerateResource.cache
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.csproj.CopyComplete
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.exe
+D:\Proyecto\GUI1\WindowsFormsApplication16\obj\Debug\WindowsFormsApplication16.pdb
